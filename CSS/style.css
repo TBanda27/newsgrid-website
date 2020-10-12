@@ -20,7 +20,7 @@
 
 html,
 body {
-    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     line-height: 1.5;
     background: var(--light-color);
 }
@@ -48,7 +48,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Staatliches', 'Times New Roman', cursive;
+    font-family: 'Staatliches', cursive;
     margin-bottom: 0.55rem;
     line-height: 1.3;
 }
