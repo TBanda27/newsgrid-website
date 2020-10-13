@@ -48,7 +48,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Staatliches', cursive;
+    font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 0.55rem;
     line-height: 1.3;
 }
@@ -235,6 +235,16 @@ h6 {
     font-weight: bold;
 }
 
+#main-nav ul li {
+    font-weight: bold;
+    padding: 0.75rem;
+}
+
+#main-nav ul li.current {
+    background: var(--primary-color);
+    color: white;
+}
+
 #main-nav ul li a.current {
     background: var(--primary-color);
     color: white;
@@ -245,6 +255,34 @@ h6 {
     color: var(--dark-color)
 }
 
+#main-nav ul li:hover {
+    background: var(--light-color);
+    color: var(--dark-color)
+}
+
+#main-nav ul li:hover ul {
+    display: block;
+    position: absolute;
+    width: 150px;
+    margin-top: 0.75rem;
+}
+
+#main-nav ul li:hover ul li {
+    display: block;
+    color: black;
+    background: var(--light-color);
+}
+
+#main-nav ul li:hover ul li a {
+    color: black;
+    background: inherit;
+}
+
+#main-nav ul li:hover ul li:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
 #main-nav .social {
     justify-self: center;
 }
@@ -252,6 +290,13 @@ h6 {
 #main-nav .social i {
     color: #777;
     margin-right: 0.55rem;
+}
+
+
+/* main nav nested list */
+
+#main-nav ul li ul {
+    display: none;
 }
 
 
@@ -310,6 +355,20 @@ h6 {
     grid-column: 2/span 2;
 }
 
+#sub-articles .container .articles-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+
+#sub-articles .container .articles-container>article {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column: 1/span 3;
+    grid-gap: 1rem;
+    align-items: center;
+}
+
 
 /* articles page */
 
@@ -324,6 +383,8 @@ h6 {
 #article .meta .category {
     margin-top: 0.4rem;
 }
+
+#home-articles .container .articles-container article:hover {}
 
 
 /* footer styling */
